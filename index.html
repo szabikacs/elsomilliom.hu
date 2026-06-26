@@ -189,7 +189,7 @@
         <p>Töltsd ki az űrlapot, és rövid időn belül felveszem veled a kapcsolatot.</p>
       </div>
 
-      <form action="https://formspree.io/f/mvzjazkn" method="POST" class="contact-form">
+      <form action="https://formspree.io/f/mvzjazkn" method="POST" class="contact-form" id="contactForm">
         <input type="text" name="name" placeholder="Teljes neved" required>
         <input type="tel" name="phone" placeholder="Telefonszámod" required>
         <input type="email" name="email" placeholder="E-mail címed" required>
@@ -216,6 +216,11 @@
         <input type="hidden" name="_subject" value="Új érdeklődő érkezett a weboldalról">
         <button class="btn primary" type="submit">Ingyenes konzultációt kérek</button>
       </form>
+      <div class="form-success" id="formSuccess">
+  <span>✓</span>
+  <h3>Köszönöm, megkaptam az üzeneted!</h3>
+  <p>Rövid időn belül felveszem veled a kapcsolatot.</p>
+</div>
     </section>
 
     <section class="quick-contact reveal">
