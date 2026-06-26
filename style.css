@@ -71,8 +71,7 @@ h1 {
   letter-spacing: -0.06em;
 }
 
-h1 span,
-.cta h2 span {
+h1 span {
   color: #d6b25e;
 }
 
@@ -177,6 +176,7 @@ h1 span,
 }
 
 .services,
+.knowledge,
 .cta,
 .quick-contact {
   margin-top: 48px;
@@ -188,6 +188,7 @@ h1 span,
 }
 
 .services h2,
+.knowledge h2,
 .cta h2 {
   margin: 0 0 24px;
   font-size: clamp(30px, 4vw, 48px);
@@ -196,40 +197,81 @@ h1 span,
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 14px;
 }
 
-.grid article {
+.service-card {
+  display: block;
   padding: 24px;
   border-radius: 24px;
+  text-decoration: none;
+  color: #f7f3ea;
   background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025));
   border: 1px solid rgba(255,255,255,0.08);
   transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
 
-.grid article:hover {
+.service-card:hover {
   transform: translateY(-8px);
   border-color: rgba(214, 178, 94, 0.46);
   background: rgba(214, 178, 94, 0.07);
 }
 
-.grid span {
+.service-card span {
   color: #d6b25e;
   font-size: 42px;
   font-weight: 900;
 }
 
-.grid h3 {
+.service-card h3 {
   margin: 18px 0 8px;
   font-size: 18px;
 }
 
-.grid p {
+.service-card p {
   margin: 0;
   color: rgba(247, 243, 234, 0.68);
   line-height: 1.55;
   font-size: 14px;
+}
+
+.knowledge-list {
+  display: grid;
+  gap: 18px;
+}
+
+.knowledge article {
+  scroll-margin-top: 24px;
+  padding: 26px;
+  border-radius: 26px;
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.knowledge article:hover {
+  transform: translateY(-4px);
+  border-color: rgba(214, 178, 94, 0.38);
+}
+
+.knowledge h3 {
+  margin: 0 0 10px;
+  color: #d6b25e;
+  font-size: 24px;
+}
+
+.knowledge p {
+  margin: 0 0 16px;
+  color: rgba(247, 243, 234, 0.74);
+  line-height: 1.7;
+}
+
+.knowledge ul {
+  margin: 0;
+  padding-left: 20px;
+  color: rgba(247, 243, 234, 0.72);
+  line-height: 1.8;
 }
 
 .cta {
@@ -375,14 +417,16 @@ h1 span,
   }
 }
 
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
   .hero,
   .cta {
     grid-template-columns: 1fr;
-  }
-
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .quick-contact {
@@ -402,6 +446,7 @@ h1 span,
   }
 
   .services,
+  .knowledge,
   .cta,
   .quick-contact {
     padding: 22px;
