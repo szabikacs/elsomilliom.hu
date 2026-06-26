@@ -597,3 +597,37 @@ details p {
     padding-bottom: 86px;
   }
 }
+.form-success {
+  display: none;
+  margin-top: 18px;
+  padding: 28px;
+  border-radius: 24px;
+  border: 1px solid rgba(214, 178, 94, 0.35);
+  background: rgba(214, 178, 94, 0.08);
+  text-align: center;
+  animation: reveal 0.6s ease both;
+}
+
+.form-success span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  color: #09110f;
+  background: linear-gradient(135deg, #f2d37d, #c9952e);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.form-success h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.form-success p {
+  margin: 0;
+  color: rgba(247, 243, 234, 0.72);
+}
