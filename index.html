@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <main class="page">
     <section class="hero">
@@ -17,13 +18,15 @@
         <p class="eyebrow">Pénzügyi tanácsadás érthetően</p>
         <h1>Az első <span>1 millió forintod</span> itt kezdődik.</h1>
         <p class="lead">Segítek átlátni a lehetőségeidet, megtalálni a megfelelő pénzügyi megoldást, és tudatos döntést hozni a következő nagy célodhoz.</p>
+
         <div class="actions">
-          <a class="btn primary" href="tel:+36701234567">Hívás indítása</a>
-          <a class="btn secondary" href="mailto:szabi.kacs@tanacsadas.hu">E-mail küldése</a>
+          <a class="btn primary" href="tel:+36702529159">Hívás indítása</a>
+          <a class="btn secondary" href="mailto:szabi.kacs@gmail.com">E-mail küldése</a>
         </div>
       </div>
+
       <div class="profile-card">
-        <img src="profile.jpg" alt="Szabi Kács pénzügyi tanácsadó" />
+        <img src="profile.jpg" alt="Kács Szabolcs pénzügyi tanácsadó" />
         <div class="profile-info">
           <h2>Kács Szabolcs</h2>
           <p>Pénzügyi tanácsadó</p>
@@ -33,6 +36,7 @@
 
     <section class="services">
       <h2>Miben tudok segíteni?</h2>
+
       <div class="grid">
         <article><span>🏠</span><h3>Ingatlanfinanszírozás</h3><p>Előszűrés, önerő, hitel, állami támogatások és banki lehetőségek.</p></article>
         <article><span>👨‍👩‍👧</span><h3>Gyermekjövő tervezés</h3><p>Tudatos megtakarítási irányok a család hosszú távú céljaihoz.</p></article>
@@ -43,9 +47,19 @@
     </section>
 
     <section class="cta">
-      <h2>Kérj egy rövid, ingyenes egyeztetést</h2>
-      <p>15 perc alatt megnézzük, milyen irány lehet számodra reális és érdemes.</p>
-      <a class="btn primary" href="mailto:szabi.kacs@tanacsadas.hu?subject=Ingyenes%20konzult%C3%A1ci%C3%B3t%20szeretn%C3%A9k">Időpontot kérek</a>
+      <h2>Kérj egy ingyenes konzultációt</h2>
+      <p>Töltsd ki az alábbi űrlapot, és rövid időn belül felveszem veled a kapcsolatot.</p>
+
+      <form action="https://formspree.io/f/mvzjazkn" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Teljes neved" required>
+        <input type="tel" name="phone" placeholder="Telefonszámod" required>
+        <input type="email" name="email" placeholder="E-mail címed" required>
+        <textarea name="message" rows="5" placeholder="Miben segíthetek?" required></textarea>
+
+        <input type="hidden" name="_subject" value="Új érdeklődő érkezett a weboldalról">
+
+        <button class="btn primary" type="submit">Ingyenes konzultációt kérek</button>
+      </form>
     </section>
   </main>
 </body>
