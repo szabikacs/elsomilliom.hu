@@ -1,22 +1,24 @@
-```html
 <!doctype html>
 <html lang="hu">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kács Szabolcs | Pénzügyi tanácsadó</title>
-  <meta name="description" content="Ingatlanfinanszírozás, gyermekjövő tervezés, autóhitel, nyugdíj célú megtakarítás és állami támogatások." />
+  <meta name="description" content="Pénzügyi tanácsadás: ingatlanfinanszírozás, gyermekjövő tervezés, autóhitel, nyugdíj célú megtakarítás és állami támogatások." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <div class="bg-glow one"></div>
+  <div class="bg-glow two"></div>
+
   <main class="page">
 
     <section class="hero">
-      <div class="hero-text">
+      <div class="hero-text reveal">
         <p class="eyebrow">Pénzügyi tanácsadás érthetően</p>
         <h1>Az első <span>1 millió forintod</span> itt kezdődik.</h1>
         <p class="lead">
@@ -30,55 +32,59 @@
         </div>
       </div>
 
-      <div class="profile-card">
+      <div class="profile-card reveal floating">
+        <div class="shine"></div>
         <img src="profile.jpg" alt="Kács Szabolcs pénzügyi tanácsadó" />
         <div class="profile-info">
-          <h2>Kács Szabolcs</h2>
           <p>Pénzügyi tanácsadó</p>
+          <h2>Kács Szabolcs</h2>
         </div>
       </div>
     </section>
 
-    <section class="services">
+    <section class="services reveal">
+      <p class="section-label">Szolgáltatások</p>
       <h2>Miben tudok segíteni?</h2>
 
       <div class="grid">
         <article>
-          <span>🏠</span>
+          <span>⌂</span>
           <h3>Ingatlanfinanszírozás</h3>
           <p>Előszűrés, önerő, hitel, állami támogatások és banki lehetőségek.</p>
         </article>
 
         <article>
-          <span>👨‍👩‍👧</span>
+          <span>◌</span>
           <h3>Gyermekjövő tervezés</h3>
           <p>Tudatos megtakarítási irányok a család hosszú távú céljaihoz.</p>
         </article>
 
         <article>
-          <span>🚗</span>
+          <span>▰</span>
           <h3>Autóhitel</h3>
           <p>Finanszírozási opciók átnézése, törlesztő és teljes költség alapján.</p>
         </article>
 
         <article>
-          <span>🐖</span>
+          <span>↗</span>
           <h3>Nyugdíj célú megtakarítás</h3>
           <p>Nyugdíjtervezés, adójóváírás és hosszú távú pénzügyi biztonság.</p>
         </article>
 
         <article>
-          <span>🏛️</span>
+          <span>▥</span>
           <h3>Állami támogatások</h3>
           <p>Babaváró, CSOK Plusz, lakáscélú és családtámogatási lehetőségek.</p>
         </article>
       </div>
     </section>
 
-    <section class="cta" id="konzultacio">
-      <p class="eyebrow">Kapcsolatfelvétel</p>
-      <h2>Kérj egy ingyenes konzultációt</h2>
-      <p>Töltsd ki az alábbi űrlapot, és rövid időn belül felveszem veled a kapcsolatot.</p>
+    <section class="cta reveal" id="konzultacio">
+      <div class="cta-text">
+        <p class="section-label">Kapcsolatfelvétel</p>
+        <h2>Kérj egy ingyenes konzultációt</h2>
+        <p>Töltsd ki az űrlapot, és rövid időn belül felveszem veled a kapcsolatot.</p>
+      </div>
 
       <form action="https://formspree.io/f/mvzjazkn" method="POST" class="contact-form">
         <input type="text" name="name" placeholder="Teljes neved" required>
@@ -103,18 +109,16 @@
         </label>
 
         <input type="hidden" name="_subject" value="Új érdeklődő érkezett a weboldalról">
-
         <button class="btn primary" type="submit">Ingyenes konzultációt kérek</button>
       </form>
+    </section>
 
-      <div class="quick-contact">
-        <a href="tel:+36702529159">📞 Hívás</a>
-        <a href="mailto:szabi.kacs@gmail.com">✉️ E-mail</a>
-        <a href="https://wa.me/36702529159" target="_blank">💬 WhatsApp</a>
-      </div>
+    <section class="quick-contact reveal">
+      <a href="tel:+36702529159">📞 <strong>Hívás</strong><small>+36 70 252 9159</small></a>
+      <a href="mailto:szabi.kacs@gmail.com">✉️ <strong>E-mail</strong><small>szabi.kacs@gmail.com</small></a>
+      <a href="https://wa.me/36702529159" target="_blank">💬 <strong>WhatsApp</strong><small>Írj üzenetet</small></a>
     </section>
 
   </main>
 </body>
 </html>
-```
