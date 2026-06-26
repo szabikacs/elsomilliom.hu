@@ -35,3 +35,33 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".reveal, .stats").forEach(el => {
   observer.observe(el);
 });
+const contactForm = document.getElementById("contactForm");
+const formSuccess = document.getElementById("formSuccess");
+
+if (contactForm && formSuccess) {
+  contactForm.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (response.ok) {
+        contactForm.reset();
+        contactForm.style.display = "none";
+        formSuccess.style.display = "block";
+      } else {
+        alert("Valami hiba történt. Kérlek, próbáld újra, vagy írj e-mailt.");
+      }
+    } catch (error) {
+      alert("Nem sikerült elküldeni az üzenetet. Kérlek, próbáld újra később.");
+    }
+  });
+}
