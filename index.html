@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="hu">
 <head>
@@ -10,8 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-  
-<script src="script.js"></script>
+
 <body>
   <div class="bg-glow one"></div>
   <div class="bg-glow two"></div>
@@ -39,6 +39,54 @@
         <div class="profile-info">
           <p>Pénzügyi tanácsadó</p>
           <h2>Kács Szabolcs</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <strong><span class="counter" data-target="500" data-suffix="+">0</span></strong>
+        <p>konzultáció</p>
+      </div>
+
+      <div class="stat-card">
+        <strong><span class="counter" data-target="25" data-suffix="+">0</span></strong>
+        <p>banki és pénzügyi partner</p>
+      </div>
+
+      <div class="stat-card">
+        <strong><span class="counter" data-target="100" data-suffix="%">0</span></strong>
+        <p>díjmentes tanácsadás</p>
+      </div>
+    </section>
+
+    <section class="services reveal">
+      <p class="section-label">Miért engem válassz?</p>
+      <h2>Nem csak ajánlatot kapsz, hanem irányt is.</h2>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <span>✓</span>
+          <h3>Több bank ajánlata</h3>
+          <p>Nem egyetlen bank lehetőségeit nézzük meg.</p>
+        </div>
+
+        <div class="why-card">
+          <span>✓</span>
+          <h3>Díjmentes tanácsadás</h3>
+          <p>Az első egyeztetés számodra díjmentes.</p>
+        </div>
+
+        <div class="why-card">
+          <span>✓</span>
+          <h3>Végigkísérlek</h3>
+          <p>Nem hagylak magadra a folyamat közepén.</p>
+        </div>
+
+        <div class="why-card">
+          <span>✓</span>
+          <h3>Érthető magyarázat</h3>
+          <p>Nem banki nyelven, hanem emberien beszéljük át.</p>
         </div>
       </div>
     </section>
@@ -93,79 +141,44 @@
     </section>
 
     <section class="knowledge reveal">
-      <p class="section-label">Tudástár röviden</p>
+      <p class="section-label">Tudástár 2.0</p>
       <h2>Olvass bele, mielőtt döntesz</h2>
 
       <div class="knowledge-list">
-        <article id="ingatlan">
-          <h3>Ingatlanfinanszírozás</h3>
+        <details id="ingatlan" open>
+          <summary>Ingatlanfinanszírozás</summary>
           <p>Az ingatlanvásárlásnál nem csak a vételár számít. Fontos az önerő, a jövedelem, a meglévő hitelek, az ingatlan állapota és az is, hogy melyik bank milyen feltételekkel finanszíroz.</p>
-          <ul>
-            <li>előzetes hitelképesség-vizsgálat</li>
-            <li>önerő és fedezet átnézése</li>
-            <li>banki ajánlatok összehasonlítása</li>
-          </ul>
-        </article>
+        </details>
 
-        <article id="gyermekjovo">
-          <h3>Gyermekjövő tervezés</h3>
+        <details id="gyermekjovo">
+          <summary>Gyermekjövő tervezés</summary>
           <p>Egy jól felépített megtakarítás segíthet később tanulmányokban, lakhatásban vagy az első nagyobb életcél elindításában.</p>
-          <ul>
-            <li>rendszeres megtakarítási terv</li>
-            <li>időtáv és célösszeg meghatározása</li>
-            <li>rugalmas, családhoz igazított megoldások</li>
-          </ul>
-        </article>
+        </details>
 
-        <article id="autohitel">
-          <h3>Autóhitel</h3>
+        <details id="autohitel">
+          <summary>Autóhitel</summary>
           <p>Autóvásárlásnál nem elég csak a havi törlesztőt nézni. Fontos a teljes visszafizetendő összeg, a futamidő, az önerő és az, hogy személyi kölcsön, autóhitel vagy lízing lehet-e a jobb irány.</p>
-          <ul>
-            <li>új vagy használt autó finanszírozása</li>
-            <li>törlesztő és teljes költség összevetése</li>
-            <li>gyors előszűrés jövedelem alapján</li>
-          </ul>
-        </article>
+        </details>
 
-        <article id="nyugdij">
-          <h3>Nyugdíj célú megtakarítás</h3>
+        <details id="nyugdij">
+          <summary>Nyugdíj célú megtakarítás</summary>
           <p>Minél korábban kezded, annál kisebb havi összeggel is komolyabb eredményt lehet elérni hosszú távon. A cél a kiszámíthatóbb, biztonságosabb jövő.</p>
-          <ul>
-            <li>nyugdíjcél meghatározása</li>
-            <li>adójóváírási lehetőségek átbeszélése</li>
-            <li>hosszú távú megtakarítási stratégia</li>
-          </ul>
-        </article>
+        </details>
 
-        <article id="hitelkivaltas">
-          <h3>Hitelkiváltás</h3>
+        <details id="hitelkivaltas">
+          <summary>Hitelkiváltás</summary>
           <p>Ha van meglévő hiteled, érdemes időnként megnézni, hogy elérhető-e kedvezőbb konstrukció. A cél lehet alacsonyabb törlesztő, rövidebb futamidő vagy átláthatóbb hitelszerkezet.</p>
-          <ul>
-            <li>meglévő hitelek áttekintése</li>
-            <li>kiváltási lehetőségek vizsgálata</li>
-            <li>törlesztő és teljes visszafizetés összehasonlítása</li>
-          </ul>
-        </article>
+        </details>
 
-        <article id="bankszamla">
-          <h3>Bankszámlák és bankkártyák</h3>
+        <details id="bankszamla">
+          <summary>Bankszámlák és bankkártyák</summary>
           <p>Sokan évekig ugyanazt a bankszámlát használják, pedig lehet, hogy lenne kedvezőbb megoldás. Átnézzük a számlavezetési díjat, kártyadíjat, utalási költséget és az aktuális számlanyitási lehetőségeket.</p>
-          <ul>
-            <li>bankszámlaköltségek átnézése</li>
-            <li>kedvezőbb számlacsomag keresése</li>
-            <li>számlanyitási jóváírások vizsgálata</li>
-          </ul>
-        </article>
+        </details>
 
-        <article id="tamogatasok">
-          <h3>Állami támogatások</h3>
+        <details id="tamogatasok">
+          <summary>Állami támogatások</summary>
           <p>A támogatások sokat segíthetnek, de fontos a jogosultság, a határidők, a vállalások és a banki feltételek pontos átnézése.</p>
-          <ul>
-            <li>Babaváró</li>
-            <li>CSOK Plusz</li>
-            <li>lakáscélú és családtámogatási lehetőségek</li>
-          </ul>
-        </article>
+        </details>
       </div>
     </section>
 
@@ -211,6 +224,15 @@
       <a href="https://wa.me/36702529159" target="_blank">💬 <strong>WhatsApp</strong><small>Írj üzenetet</small></a>
     </section>
 
+    <nav class="mobile-bar">
+      <a href="tel:+36702529159">📞 Hívás</a>
+      <a href="https://wa.me/36702529159">💬 WhatsApp</a>
+      <a href="#konzultacio">📅 Konzultáció</a>
+    </nav>
+
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
+```
